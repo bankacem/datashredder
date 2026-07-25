@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>🗑️ DataShredder - Kostenloser DSGVO-Löschantrag-Generator | Personenbezogene Daten löschen</title>
+    <meta name="description" content="Erstellen Sie sofort professionelle DSGVO-Löschanträge. Kostenloses Tool zur Ausübung Ihres Rechts auf Vergessenwerden. Löschen Sie Ihre Daten in Sekundenschnelle.">
+    <meta name="keywords" content="DSGVO, Daten löschen, Recht auf Vergessenwerden, Datenlöschung, CCPA, Datenschutz, meine Daten löschen, DSGVO Generator">
+    <meta name="author" content="DataShredder">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://datashredder.com/de.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="DataShredder - Kostenloser DSGVO-Löschantrag-Generator">
+    <meta property="og:description" content="Generieren Sie in wenigen Sekunden professionelle DSGVO-Löschanträge kostenlos.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://datashredder.com/de.html">
+    <meta property="og:image" content="https://datashredder.com/assets/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        🌍
+        <a href="index.html">EN</a> |
+        <a href="ar.html">العربية</a> |
+        <a href="fr.html">FR</a> |
+        <a href="de.html" class="active">DE</a> |
+        <a href="es.html">ES</a>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🗑️ DataShredder</h1>
+                <p class="tagline">Ihr Recht auf Vergessenwerden, ganz einfach</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero-title">🔒 Übernehmen Sie die Kontrolle über Ihre Daten</h2>
+            <p class="hero-subtitle">Generieren Sie in Sekundenschnelle professionelle, DSGVO-konforme Löschanträge – völlig KOSTENLOS! ✨</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Sofortige Erstellung</h3>
+                    <p>Anträge in Sekundenschnelle erstellen</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">⚖️</span>
+                    <h3>Rechtlich konform</h3>
+                    <p>Bereit für DSGVO, CCPA, PDPL</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🆓</span>
+                    <h3>100% Kostenlos</h3>
+                    <p>Keine versteckten Kosten</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🌍</span>
+                    <h3>Mehrsprachig</h3>
+                    <p>Unterstützung für mehr als 5 Sprachen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Generator Tool -->
+    <section class="generator-section">
+        <div class="container">
+            <div class="generator-card">
+                <h2 class="section-title">📝 Erstellen Sie Ihren Löschantrag</h2>
+
+                <form id="deletionForm" class="deletion-form">
+                    <div class="form-group">
+                        <label for="userName">👤 Ihr vollständiger Name *</label>
+                        <input type="text" id="userName" name="userName" placeholder="z. B. Max Mustermann" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userEmail">📧 Ihre E-Mail-Adresse *</label>
+                        <input type="email" id="userEmail" name="userEmail" placeholder="z. B. max@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="companyName">🏢 Name des Unternehmens *</label>
+                        <input type="text" id="companyName" name="companyName" placeholder="z. B. Facebook, Google, Amazon" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="companyEmail">📮 Datenschutz-E-Mail / DPO (optional)</label>
+                        <input type="email" id="companyEmail" name="companyEmail" placeholder="z. B. datenschutz@firma.de">
+                        <small>💡 Falls unbekannt, nutzen wir eine allgemeine Formulierung</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regulation">⚖️ Wählen Sie die Rechtsgrundlage</label>
+                        <select id="regulation" name="regulation">
+                            <option value="gdpr">DSGVO (Europäische Union)</option>
+                            <option value="ccpa">CCPA (Kalifornien, USA)</option>
+                            <option value="pdpl">PDPL (Saudi-Arabien)</option>
+                            <option value="lgpd">LGPD (Brasilien)</option>
+                            <option value="generic">Allgemein (Weltweit)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="includeAccount" name="includeAccount" checked>
+                            <span>🔐 Kontolöschung anfordern (falls zutreffend)</span>
+                        </label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="urgentRequest" name="urgentRequest">
+                            <span>⚠️ Als dringenden Antrag markieren</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        ✨ Löschantrag generieren
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Output Section -->
+    <section id="outputSection" class="output-section" style="display: none;">
+        <div class="container">
+            <div class="output-card">
+                <h2 class="section-title">✅ Ihr Löschantrag ist fertig!</h2>
+
+                <div class="output-actions">
+                    <button id="copyBtn" class="btn-secondary">
+                        📋 In Zwischenablage kopieren
+                    </button>
+                    <button id="downloadBtn" class="btn-secondary">
+                        💾 Als .txt herunterladen
+                    </button>
+                    <button id="emailBtn" class="btn-secondary">
+                        📧 Per E-Mail senden
+                    </button>
+                </div>
+
+                <div class="output-content">
+                    <pre id="generatedText"></pre>
+                </div>
+
+                <div class="next-steps">
+                    <h3>📬 Nächste Schritte:</h3>
+                    <ol>
+                        <li>✅ Kopieren Sie den obigen Text</li>
+                        <li>📧 Senden Sie ihn an die Datenschutz-E-Mail des Unternehmens</li>
+                        <li>⏰ Unternehmen müssen innerhalb von 30 Tagen (DSGVO) reagieren</li>
+                        <li>📊 Behalten Sie den Status im Auge und haken Sie bei Bedarf nach</li>
+                    </ol>
+                </div>
+
+                <div class="premium-cta">
+                    <h3>🚀 Automatische Nachverfolgung gewünscht?</h3>
+                    <p>Upgrade auf <strong>DataShredder Pro</strong> für 5 $/Monat:</p>
+                    <ul>
+                        <li>✅ Automatische Erinnerungen zur Nachverfolgung</li>
+                        <li>✅ Dashboard zur Verwaltung Ihrer Anträge</li>
+                        <li>✅ Sammel-Löschanträge</li>
+                        <li>✅ Bevorzugter Support</li>
+                    </ul>
+                    <button class="btn-premium">🌟 Upgrade auf Pro - 5 $/Monat</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 DataShredder. Alle Rechte vorbehalten. | Mit ❤️ für den Datenschutz gemacht</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

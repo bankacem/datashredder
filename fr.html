@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>🗑️ DataShredder - Générateur gratuit de demande de suppression de données RGPD | Supprimez vos données personnelles</title>
+    <meta name="description" content="Générez instantanément des demandes de suppression de données RGPD professionnelles. Outil gratuit pour exercer votre droit à l'oubli. Supprimez vos données de n'importe quelle entreprise.">
+    <meta name="keywords" content="RGPD, suppression de données, droit à l'oubli, suppression données personnelles, CCPA, vie privée, supprimer mes données, générateur de demande RGPD">
+    <meta name="author" content="DataShredder">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://datashredder.com/fr.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="DataShredder - Générateur gratuit de demande de suppression de données RGPD">
+    <meta property="og:description" content="Générez des demandes professionnelles en quelques secondes. Exercez vos droits RGPD gratuitement.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://datashredder.com/fr.html">
+    <meta property="og:image" content="https://datashredder.com/assets/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        🌍
+        <a href="index.html">EN</a> |
+        <a href="ar.html">العربية</a> |
+        <a href="fr.html" class="active">FR</a> |
+        <a href="de.html">DE</a> |
+        <a href="es.html">ES</a>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🗑️ DataShredder</h1>
+                <p class="tagline">Votre droit à l'oubli, simplifié</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero-title">🔒 Prenez le contrôle de vos données personnelles</h2>
+            <p class="hero-subtitle">Générez des demandes professionnelles conformes au RGPD en quelques secondes - Totalement GRATUIT ! ✨</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Génération instantanée</h3>
+                    <p>Créez des demandes en quelques secondes</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">⚖️</span>
+                    <h3>Conformité légale</h3>
+                    <p>Prêt pour le RGPD, CCPA, PDPL</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🆓</span>
+                    <h3>100% Gratuit</h3>
+                    <p>Aucun coût caché, jamais</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🌍</span>
+                    <h3>Multilingue</h3>
+                    <p>Support de plus de 5 langues</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Generator Tool -->
+    <section class="generator-section">
+        <div class="container">
+            <div class="generator-card">
+                <h2 class="section-title">📝 Générez votre demande de suppression</h2>
+
+                <form id="deletionForm" class="deletion-form">
+                    <div class="form-group">
+                        <label for="userName">👤 Votre nom complet *</label>
+                        <input type="text" id="userName" name="userName" placeholder="e.g., Jean Dupont" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userEmail">📧 Votre adresse e-mail *</label>
+                        <input type="email" id="userEmail" name="userEmail" placeholder="e.g., jean.dupont@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="companyName">🏢 Nom de l'entreprise *</label>
+                        <input type="text" id="companyName" name="companyName" placeholder="e.g., Facebook, Google, Amazon" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="companyEmail">📮 E-mail du DPD / de la vie privée (optionnel)</label>
+                        <input type="email" id="companyEmail" name="companyEmail" placeholder="e.g., dpo@company.com">
+                        <small>💡 Si inconnu, nous utiliserons une formule générique</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regulation">⚖️ Sélectionnez le cadre réglementaire</label>
+                        <select id="regulation" name="regulation">
+                            <option value="gdpr">RGPD (Union européenne)</option>
+                            <option value="ccpa">CCPA (Californie, États-Unis)</option>
+                            <option value="pdpl">PDPL (Arabie Saoudite)</option>
+                            <option value="lgpd">LGPD (Brésil)</option>
+                            <option value="generic">Générique (Monde entier)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="includeAccount" name="includeAccount" checked>
+                            <span>🔐 Demander la suppression du compte (si applicable)</span>
+                        </label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="urgentRequest" name="urgentRequest">
+                            <span>⚠️ Marquer comme demande urgente</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        ✨ Générer la demande de suppression
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Output Section -->
+    <section id="outputSection" class="output-section" style="display: none;">
+        <div class="container">
+            <div class="output-card">
+                <h2 class="section-title">✅ Votre demande de suppression est prête !</h2>
+
+                <div class="output-actions">
+                    <button id="copyBtn" class="btn-secondary">
+                        📋 Copier dans le presse-papiers
+                    </button>
+                    <button id="downloadBtn" class="btn-secondary">
+                        💾 Télécharger en tant que .txt
+                    </button>
+                    <button id="emailBtn" class="btn-secondary">
+                        📧 Envoyer par e-mail
+                    </button>
+                </div>
+
+                <div class="output-content">
+                    <pre id="generatedText"></pre>
+                </div>
+
+                <div class="next-steps">
+                    <h3>📬 Prochaines étapes :</h3>
+                    <ol>
+                        <li>✅ Copiez le texte généré ci-dessus</li>
+                        <li>📧 Envoyez-le à l'adresse e-mail de confidentialité / DPD de l'entreprise</li>
+                        <li>⏰ Ils doivent répondre sous 30 jours (RGPD) ou 45 jours (CCPA)</li>
+                        <li>📊 Suivez votre demande et relancez si nécessaire</li>
+                    </ol>
+                </div>
+
+                <div class="premium-cta">
+                    <h3>🚀 Vous voulez un suivi automatique ?</h3>
+                    <p>Passez à <strong>DataShredder Pro</strong> pour 5 $/mois :</p>
+                    <ul>
+                        <li>✅ Rappels de suivi automatiques</li>
+                        <li>✅ Tableau de bord de suivi des demandes</li>
+                        <li>✅ Demandes de suppression groupées</li>
+                        <li>✅ Support prioritaire</li>
+                    </ul>
+                    <button class="btn-premium">🌟 Passer à Pro - 5 $/mois</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <section class="why-section">
+        <div class="container">
+            <h2 class="section-title">🤔 Pourquoi utiliser DataShredder ?</h2>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <span class="why-icon">🛡️</span>
+                    <h3>Protégez votre vie privée</h3>
+                    <p>Les entreprises collectent d'immenses quantités de données personnelles. Reprenez le contrôle et supprimez ce qui n'est pas requis.</p>
+                </div>
+
+                <div class="why-card">
+                    <span class="why-icon">⚖️</span>
+                    <h3>Droit légal</h3>
+                    <p>Sous le RGPD, la CCPA et d'autres règlements, vous avez le droit légal d'exiger l'effacement de vos données.</p>
+                </div>
+
+                <div class="why-card">
+                    <span class="why-icon">🎯</span>
+                    <h3>Modèles professionnels</h3>
+                    <p>Nos modèles sont rédigés avec soin et citent les articles juridiques adéquats pour maximiser la conformité.</p>
+                </div>
+
+                <div class="why-card">
+                    <span class="why-icon">💰</span>
+                    <h3>Totalement gratuit</h3>
+                    <p>Aucune carte de crédit requise. Générez des demandes illimitées sans frais.</p>
+                </div>
+
+                <div class="why-card">
+                    <span class="why-icon">🌐</span>
+                    <h3>Fonctionne partout</h3>
+                    <p>Valable pour n'importe quelle entreprise dans le monde (Facebook, Google, Amazon, etc.).</p>
+                </div>
+
+                <div class="why-card">
+                    <span class="why-icon">🔒</span>
+                    <h3>Vos données restent privées</h3>
+                    <p>Nous ne stockons rien de ce que vous tapez. Tout s'exécute localement dans votre navigateur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">❓ Questions fréquemment posées</h2>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Qu'est-ce que le droit à l'oubli ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Le droit à l'oubli (ou droit à l'effacement) est garanti par l'article 17 du RGPD. Il permet à chacun de demander la suppression de ses données personnelles auprès des entreprises.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Ce service est-il vraiment gratuit ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui ! Le générateur est gratuit sans limite. Nous offrons une option Pro ($5/mois) pour suivre vos demandes, mais l'outil de base reste et sera toujours gratuit.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Stockez-vous mes informations personnelles ?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Non ! Tout se fait dans votre navigateur. Nous ne collectons, stockons ni ne transmettons aucune donnée personnelle saisie. Votre confidentialité est primordiale.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 DataShredder. Tous droits réservés. | Fait avec ❤️ pour la vie privée</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

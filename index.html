@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>🗑️ DataShredder - Free GDPR Data Deletion Request Generator | Delete Your Personal Data</title>
+    <meta name="description" content="Generate professional GDPR data deletion requests instantly. Free tool to exercise your right to be forgotten. Delete your personal data from any company in seconds. GDPR, CCPA, PDPL compliant templates.">
+    <meta name="keywords" content="GDPR, data deletion, right to be forgotten, personal data removal, CCPA, data privacy, delete my data, GDPR request generator, privacy rights, data protection">
+    <meta name="author" content="DataShredder">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://datashredder.com/">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="DataShredder - Free GDPR Data Deletion Request Generator">
+    <meta property="og:description" content="Generate professional data deletion requests in seconds. Exercise your GDPR rights for free.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://datashredder.com/">
+    <meta property="og:image" content="https://datashredder.com/assets/og-image.jpg">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DataShredder - Free GDPR Data Deletion Request Generator">
+    <meta name="twitter:description" content="Generate professional data deletion requests in seconds.">
+    <meta name="twitter:image" content="https://datashredder.com/assets/twitter-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "DataShredder",
+      "description": "Free GDPR data deletion request generator",
+      "url": "https://datashredder.com",
+      "applicationCategory": "UtilityApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": "GDPR compliance, Data deletion requests, Privacy rights, Multi-language support"
+    }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        🌍
+        <a href="index.html" class="active">EN</a> |
+        <a href="ar.html">العربية</a> |
+        <a href="fr.html">FR</a> |
+        <a href="de.html">DE</a> |
+        <a href="es.html">ES</a>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🗑️ DataShredder</h1>
+                <p class="tagline">Your Right to Be Forgotten, Made Easy</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero-title">🔒 Take Control of Your Personal Data</h2>
+            <p class="hero-subtitle">Generate professional GDPR-compliant data deletion requests in seconds - Completely FREE! ✨</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Instant Generation</h3>
+                    <p>Create requests in seconds</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">⚖️</span>
+                    <h3>Legally Compliant</h3>
+                    <p>GDPR, CCPA, PDPL ready</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🆓</span>
+                    <h3>100% Free</h3>
+                    <p>No hidden costs ever</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🌍</span>
+                    <h3>Multi-Language</h3>
+                    <p>Support for 5+ languages</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Generator Tool -->
+    <section class="generator-section">
+        <div class="container">
+            <div class="generator-card">
+                <h2 class="section-title">📝 Generate Your Data Deletion Request</h2>
+
+                <form id="deletionForm" class="deletion-form">
+                    <div class="form-group">
+                        <label for="userName">👤 Your Full Name *</label>
+                        <input type="text" id="userName" name="userName" placeholder="e.g., John Smith" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userEmail">📧 Your Email Address *</label>
+                        <input type="email" id="userEmail" name="userEmail" placeholder="e.g., john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="companyName">🏢 Company Name *</label>
+                        <input type="text" id="companyName" name="companyName" placeholder="e.g., Facebook, Google, Amazon" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="companyEmail">📮 Company's Privacy/DPO Email (optional)</label>
+                        <input type="email" id="companyEmail" name="companyEmail" placeholder="e.g., privacy@company.com">
+                        <small>💡 If unknown, we'll use generic language</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regulation">⚖️ Select Regulation Framework</label>
+                        <select id="regulation" name="regulation">
+                            <option value="gdpr">GDPR (European Union)</option>
+                            <option value="ccpa">CCPA (California, USA)</option>
+                            <option value="pdpl">PDPL (Saudi Arabia)</option>
+                            <option value="lgpd">LGPD (Brazil)</option>
+                            <option value="generic">Generic (Worldwide)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="includeAccount" name="includeAccount" checked>
+                            <span>🔐 Request account deletion (if applicable)</span>
+                        </label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="urgentRequest" name="urgentRequest">
+                            <span>⚠️ Mark as urgent request</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        ✨ Generate Deletion Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Output Section -->
+    <section id="outputSection" class="output-section" style="display: none;">
+        <div class="container">
+            <div class="output-card">
+                <h2 class="section-title">✅ Your Data Deletion Request is Ready!</h2>
+
+                <div class="output-actions">
+                    <button id="copyBtn" class="btn-secondary">
+                        📋 Copy to Clipboard
+                    </button>
+                    <button id="downloadBtn" class="btn-secondary">
+                        💾 Download as .txt
+                    </button>
+                    <button id="emailBtn" class="btn-secondary">
+                        📧 Send via Email
+                    </button>
+                </div>
+
+                <div class="output-content">
+                    <pre id="generatedText"></pre>
+                </div>
+
+                <div class="next-steps">
+                    <h3>📬 Next Steps:</h3>
+                    <ol>
+                        <li>✅ Copy the generated text above</li>
+                        <li>📧 Send it to the company's privacy/DPO email</li>
+                        <li>⏰ They must respond within 30 days (GDPR) or 45 days (CCPA)</li>
+                        <li>📊 Track your request and follow up if needed</li>
+                    </ol>
+                </div>
+
+                <div class="premium-cta">
+                    <h3>🚀 Want Automatic Tracking?</h3>
+                    <p>Upgrade to <strong>DataShredder Pro</strong> for $5/month:</p>
+                    <ul>
+                        <li>✅ Automatic follow-up reminders</li>
+                        <li>✅ Request tracking dashboard</li>
+                        <li>✅ Batch deletion requests</li>
+                        <li>✅ Priority support</li>
+                    </ul>
+                    <button class="btn-premium">🌟 Upgrade to Pro - $5/month</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why DataShredder Section -->
+    <section class="why-section">
+        <div class="container">
+            <h2 class="section-title">🤔 Why Use DataShredder?</h2>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <span class="why-icon">🛡️</span>
+                    <h3>Protect Your Privacy</h3>
+                    <p>Companies collect massive amounts of your personal data. Take back control and delete what you don't need stored.</p>
+                </div>
+
+                <div class="why-card">
+                    <span class="why-icon">⚖️</span>
+                    <h3>Legal Right</h3>
+                    <p>Under GDPR, CCPA, and other regulations, you have the legal right to request deletion of your personal data.</p>
+                </div>
+
+                <div class="why-card">
+                    <span class="why-icon">🎯</span>
+                    <h3>Professionally Crafted</h3>
+                    <p>Our templates are legally reviewed and cite specific articles to maximize compliance.</p>
+                </div>
+
+                <div class="why-card">
+                    <span class="why-icon">💰</span>
+                    <h3>Completely Free</h3>
+                    <p>No credit card required. Generate unlimited deletion requests at no cost.</p>
+                </div>
+
+                <div class="why-card">
+                    <span class="why-icon">🌐</span>
+                    <h3>Works Everywhere</h3>
+                    <p>Use it for any company worldwide - Facebook, Google, Amazon, LinkedIn, or any other service.</p>
+                </div>
+
+                <div class="why-card">
+                    <span class="why-icon">🔒</span>
+                    <h3>Your Data Stays Private</h3>
+                    <p>We don't store any information you enter. Everything happens in your browser.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">🔄 How It Works</h2>
+
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1️⃣</div>
+                    <h3>Enter Your Information</h3>
+                    <p>Fill in your name, email, and the company you want to delete your data from.</p>
+                </div>
+
+                <div class="step-arrow">→</div>
+
+                <div class="step">
+                    <div class="step-number">2️⃣</div>
+                    <h3>Generate Request</h3>
+                    <p>We create a legally-compliant deletion request based on your chosen regulation.</p>
+                </div>
+
+                <div class="step-arrow">→</div>
+
+                <div class="step">
+                    <div class="step-number">3️⃣</div>
+                    <h3>Send to Company</h3>
+                    <p>Copy and email the request to the company's Data Protection Officer.</p>
+                </div>
+
+                <div class="step-arrow">→</div>
+
+                <div class="step">
+                    <div class="step-number">4️⃣</div>
+                    <h3>Get Confirmation</h3>
+                    <p>The company must respond within 30-45 days and delete your data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">❓ Frequently Asked Questions</h2>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the Right to be Forgotten?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The Right to be Forgotten (also known as Right to Erasure) is a provision under GDPR Article 17 that allows individuals to request deletion of their personal data from companies. Similar rights exist under CCPA, LGPD, and other privacy laws.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is this service really free?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! The basic deletion request generator is 100% free with no limits. We offer an optional Pro plan ($5/month) with tracking features, but the core tool will always be free.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you store my personal information?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No! Everything happens in your browser. We don't collect, store, or transmit any personal information you enter. Your privacy is our priority.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long do companies have to respond?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Under GDPR: 30 days (extendable to 60 in complex cases). Under CCPA: 45 days (extendable to 90). Most companies respond faster to avoid penalties.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What if the company refuses my request?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Companies must provide a valid legal reason for refusal (e.g., legal obligation to keep data). If refused unfairly, you can file a complaint with your data protection authority or seek legal advice.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I use this for any company?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Works for Facebook, Google, Amazon, LinkedIn, TikTok, Instagram, Twitter, banks, retailers, or any organization that has your personal data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <h2 class="section-title">📚 Learn About Data Privacy</h2>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <span class="blog-icon">📖</span>
+                    <h3>What is GDPR and How Does it Protect You?</h3>
+                    <p>Complete guide to understanding GDPR, your rights, and how to exercise them effectively.</p>
+                    <a href="blog/what-is-gdpr.html" class="blog-link">Read More →</a>
+                </article>
+
+                <article class="blog-card">
+                    <span class="blog-icon">🗑️</span>
+                    <h3>How to Delete Your Data from Major Platforms</h3>
+                    <p>Step-by-step instructions for deleting your data from Facebook, Google, Amazon, and more.</p>
+                    <a href="blog/how-to-delete-data.html" class="blog-link">Read More →</a>
+                </article>
+
+                <article class="blog-card">
+                    <span class="blog-icon">🔐</span>
+                    <h3>Understanding Your Data Privacy Rights</h3>
+                    <p>Learn about GDPR, CCPA, LGPD, and other global privacy regulations.</p>
+                    <a href="blog/data-privacy-rights.html" class="blog-link">Read More →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>🚀 Ready to Take Control of Your Data?</h2>
+            <p>Generate your first deletion request now - it takes less than 2 minutes!</p>
+            <a href="#deletionForm" class="btn-large">Get Started Free →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>DataShredder</h4>
+                    <p>Empowering individuals to exercise their data privacy rights.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#generator">Generate Request</a></li>
+                        <li><a href="blog/">Privacy Blog</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://gdpr.eu" target="_blank">GDPR Official</a></li>
+                        <li><a href="https://oag.ca.gov/privacy/ccpa" target="_blank">CCPA Info</a></li>
+                        <li><a href="mailto:support@datashredder.com">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 DataShredder. All rights reserved. | Made with ❤️ for Privacy</p>
+                <p class="disclaimer">⚠️ This tool provides templates for educational purposes. Consult a lawyer for specific legal advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

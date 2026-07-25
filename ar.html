@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>🗑️ DataShredder - مولد طلبات حذف البيانات الشخصية مجاناً | احذف بياناتك وفقاً لـ GDPR</title>
+    <meta name="description" content="قم بتوليد طلبات حذف البيانات الشخصية باحترافية فوراً. أداة مجانية لممارسة حقك في النسيان وحذف بياناتك من أي شركة في ثوانٍ متوافق مع GDPR, CCPA, PDPL.">
+    <meta name="keywords" content="GDPR, حذف البيانات, الحق في النسيان, إزالة البيانات الشخصية, نظام حماية البيانات الشخصية, خصوصية البيانات, حذف بياناتي">
+    <meta name="author" content="DataShredder">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://datashredder.com/ar.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="DataShredder - مولد طلبات حذف البيانات الشخصية مجاناً">
+    <meta property="og:description" content="قم بتوليد طلبات حذف البيانات باحترافية في ثوانٍ. مارس حقوقك مجاناً.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://datashredder.com/ar.html">
+    <meta property="og:image" content="https://datashredder.com/assets/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        🌍
+        <a href="index.html">EN</a> |
+        <a href="ar.html" class="active">العربية</a> |
+        <a href="fr.html">FR</a> |
+        <a href="de.html">DE</a> |
+        <a href="es.html">ES</a>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🗑️ DataShredder</h1>
+                <p class="tagline">حقك في النسيان، أصبح سهلاً</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero-title">🔒 تحكم في بياناتك الشخصية</h2>
+            <p class="hero-subtitle">قم بتوليد طلبات احترافية متوافقة تماماً مع الأنظمة العالمية لحذف البيانات في ثوانٍ - مجاني 100%! ✨</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">⚡</span>
+                    <h3>توليد فوري</h3>
+                    <p>أنشئ طلبك في ثوانٍ معدودة</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">⚖️</span>
+                    <h3>متوافق قانونياً</h3>
+                    <p>جاهز لـ GDPR و CCPA ونظام حماية البيانات السعودي</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🆓</span>
+                    <h3>مجاني 100%</h3>
+                    <p>بدون أي تكاليف مخفية على الإطلاق</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🌍</span>
+                    <h3>متعدد اللغات</h3>
+                    <p>دعم كامل لأكثر من 5 لغات عالمية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Generator Tool -->
+    <section class="generator-section">
+        <div class="container">
+            <div class="generator-card">
+                <h2 class="section-title">📝 أنشئ طلب حذف بياناتك الشخصية</h2>
+
+                <form id="deletionForm" class="deletion-form">
+                    <div class="form-group">
+                        <label for="userName">👤 اسمك الكامل *</label>
+                        <input type="text" id="userName" name="userName" placeholder="مثال: أحمد محمد" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userEmail">📧 بريدك الإلكتروني *</label>
+                        <input type="email" id="userEmail" name="userEmail" placeholder="مثال: ahmed@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="companyName">🏢 اسم الشركة *</label>
+                        <input type="text" id="companyName" name="companyName" placeholder="مثال: جوجل، فيسبوك، أمازون" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="companyEmail">📮 البريد الإلكتروني لمسؤول حماية البيانات (اختياري)</label>
+                        <input type="email" id="companyEmail" name="companyEmail" placeholder="مثال: privacy@company.com">
+                        <small>💡 إذا لم تكن تعرفه، فسنستخدم صيغة عامة</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regulation">⚖️ اختر الإطار التنظيمي / النظام</label>
+                        <select id="regulation" name="regulation">
+                            <option value="pdpl">نظام حماية البيانات الشخصية PDPL (السعودية)</option>
+                            <option value="gdpr">النظام الأوروبي العام لحماية البيانات GDPR (الاتحاد الأوروبي)</option>
+                            <option value="ccpa">قانون خصوصية المستهلك CCPA (كاليفورنيا، أمريكا)</option>
+                            <option value="lgpd">القانون البرازيلي العام لحماية البيانات LGPD (البرازيل)</option>
+                            <option value="generic">صيغة عامة (حول العالم)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="includeAccount" name="includeAccount" checked>
+                            <span>🔐 طلب حذف الحساب بالكامل (إذا كان ذلك مناسباً)</span>
+                        </label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="urgentRequest" name="urgentRequest">
+                            <span>⚠️ تصنيف كطلب مستعجل</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        ✨ توليد طلب حذف البيانات
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Output Section -->
+    <section id="outputSection" class="output-section" style="display: none;">
+        <div class="container">
+            <div class="output-card">
+                <h2 class="section-title">✅ طلب حذف البيانات الخاص بك جاهز!</h2>
+
+                <div class="output-actions">
+                    <button id="copyBtn" class="btn-secondary">
+                        📋 نسخ النص إلى الحافظة
+                    </button>
+                    <button id="downloadBtn" class="btn-secondary">
+                        💾 تحميل كملف نصي (.txt)
+                    </button>
+                    <button id="emailBtn" class="btn-secondary">
+                        📧 الإرسال عبر البريد الإلكتروني
+                    </button>
+                </div>
+
+                <div class="output-content">
+                    <pre id="generatedText"></pre>
+                </div>
+
+                <div class="next-steps">
+                    <h3>📬 الخطوات التالية:</h3>
+                    <ol>
+                        <li>✅ انسخ النص الذي تم توليده أعلاه</li>
+                        <li>📧 أرسله إلى بريد مسؤول الخصوصية بالشركة</li>
+                        <li>⏰ يجب عليهم الرد خلال 30 يوماً (بموجب GDPR) أو 45 يوماً (بموجب CCPA)</li>
+                        <li>📊 تتبع طلبك وتابع معهم للتأكد من إتمام الحذف</li>
+                    </ol>
+                </div>
+
+                <div class="premium-cta">
+                    <h3>🚀 هل ترغب في تتبع تلقائي لطلباتك؟</h3>
+                    <p>قم بالترقية إلى <strong>DataShredder Pro</strong> مقابل 5$ شهرياً فقط:</p>
+                    <ul>
+                        <li>✅ تذكيرات متابعة تلقائية ومستمرة</li>
+                        <li>✅ لوحة تحكم متكاملة لمتابعة الطلبات</li>
+                        <li>✅ إرسال طلبات حذف مجمعة</li>
+                        <li>✅ دعم فني ذو أولوية</li>
+                    </ul>
+                    <button class="btn-premium">🌟 ترقية إلى Pro - 5$/شهرياً</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why DataShredder Section -->
+    <section class="why-section">
+        <div class="container">
+            <h2 class="section-title">🤔 لماذا تستخدم DataShredder؟</h2>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <span class="why-icon">🛡️</span>
+                    <h3>احمِ خصوصيتك</h3>
+                    <p>تجمع الشركات كميات مهولة من بياناتك الشخصية. استعد السيطرة على هويتك الرقمية واحذف ما لا داعي للاحتفاظ به.</p>
+                </div>
+
+                <div class="why-card">
+                    <span class="why-icon">⚖️</span>
+                    <h3>حق قانوني مشروع</h3>
+                    <p>بموجب GDPR و CCPA والأنظمة المحلية مثل نظام حماية البيانات الشخصية السعودي، لديك الحق الكامل في طلب مسح بياناتك.</p>
+                </div>
+
+                <div class="why-card">
+                    <span class="why-icon">🎯</span>
+                    <h3>مصمم باحترافية</h3>
+                    <p>تمت مراجعة النماذج الخاصة بنا للاستناد على مواد قانونية حقيقية لضمان الاستجابة والامتثال السريع.</p>
+                </div>
+
+                <div class="why-card">
+                    <span class="why-icon">💰</span>
+                    <h3>مجاني بالكامل</h3>
+                    <p>لا يتطلب بطاقة ائتمانية. قم بتوليد عدد غير محدود من طلبات الحذف مجاناً وبكل أريحية.</p>
+                </div>
+
+                <div class="why-card">
+                    <span class="why-icon">🌐</span>
+                    <h3>يعمل مع جميع الجهات</h3>
+                    <p>استخدم الأداة لمراسلة أي شركة أو موقع حول العالم - فيسبوك، جوجل، أمازون، لينكد إن، أو غيرها.</p>
+                </div>
+
+                <div class="why-card">
+                    <span class="why-icon">🔒</span>
+                    <h3>بياناتك آمنة وخاصة</h3>
+                    <p>نحن لا نخزن أي معلومات تقوم بإدخالها. كل شيء يحدث في متصفحك محلياً لضمان أقصى حماية لخصوصيتك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">🔄 كيف يعمل الموقع؟</h2>
+
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1️⃣</div>
+                    <h3>أدخل معلوماتك</h3>
+                    <p>املأ اسمك، بريدك الإلكتروني، واسم الشركة التي تريد حذف بياناتك منها.</p>
+                </div>
+
+                <div class="step-arrow">←</div>
+
+                <div class="step">
+                    <div class="step-number">2️⃣</div>
+                    <h3>توليد الطلب</h3>
+                    <p>نقوم بإنشاء صيغة قانونية رصينة متوافقة مع النظام الذي قمت باختياره للامتثال المباشر.</p>
+                </div>
+
+                <div class="step-arrow">←</div>
+
+                <div class="step">
+                    <div class="step-number">3️⃣</div>
+                    <h3>إرسال للشركة</h3>
+                    <p>انسخ النص المتولد وأرسله عبر البريد الإلكتروني إلى مسؤول حماية البيانات في تلك الشركة.</p>
+                </div>
+
+                <div class="step-arrow">←</div>
+
+                <div class="step">
+                    <div class="step-number">4️⃣</div>
+                    <h3>تأكيد الحذف</h3>
+                    <p>يجب على الشركة الرد والامتثال لطلبك وحذف بياناتك بالكامل خلال 30 إلى 45 يوماً.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">❓ الأسئلة الشائعة</h2>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>ما هو الحق في النسيان؟</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>الحق في النسيان (المعروف أيضاً بالحق في مسح البيانات) هو بند بموجب المادة 17 من النظام الأوروبي GDPR والأنظمة المماثلة، يمنح الأفراد الحق في مطالبة الشركات بإتلاف وحذف كافة بياناتهم الشخصية.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>هل الخدمة مجانية حقاً؟</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم! الأداة الأساسية لتوليد الطلبات مجانية 100% وبدون قيود. نحن نقدم ميزات تتبع إضافية في الخطة المدفوعة Pro، لكن الأداة الأساسية ستظل مجانية دائماً.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>هل تقومون بحفظ بياناتي الشخصية؟</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>لا على الإطلاق! كل العمليات تتم داخل متصفحك محلياً وبشكل فوري. نحن لا نجمع، نخزن، أو نرسل أي معلومات تقوم بإدخالها إلى خوادمنا الخاصة.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>كم من الوقت يستغرق رد الشركات؟</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>وفقاً للنظام الأوروبي GDPR: تلتزم الشركات بالرد خلال 30 يوماً. بموجب نظام CCPA في كاليفورنيا: لديهم 45 يوماً للرد والامتثال.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>ماذا لو رفضت الشركة طلبي؟</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>يجب على الشركة تقديم مبرر قانوني سليم ومثبت لرفض طلبك (كوجود التزام قانوني أو مالي يلزمهم بالاحتفاظ ببياناتك). خلاف ذلك، يمكنك تصعيد الأمر وتقديم شكوى للجهات الرقابية المختصة.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>هل يمكنني استخدام هذه الأداة لأي شركة؟</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، بالتأكيد! يمكنك استخدامها ضد فيسبوك، جوجل، أمازون، تويتر، إنستغرام، البنوك، شركات التجزئة، أو أي منظمة تحتفظ ببياناتك الشخصية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <h2 class="section-title">📚 ثقف نفسك حول خصوصية البيانات</h2>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <span class="blog-icon">📖</span>
+                    <h3>ما هو GDPR وكيف يحميك؟</h3>
+                    <p>دليلك الشامل لفهم النظام الأوروبي العام لحماية البيانات وحقوقك بموجبه.</p>
+                    <a href="blog/what-is-gdpr.html" class="blog-link">اقرأ المزيد ←</a>
+                </article>
+
+                <article class="blog-card">
+                    <span class="blog-icon">🗑️</span>
+                    <h3>كيفية حذف بياناتك من المنصات الكبرى</h3>
+                    <p>إرشادات تفصيلية لحذف حساباتك وبياناتك من فيسبوك وجوجل وأمازون والمنصات الأخرى.</p>
+                    <a href="blog/how-to-delete-data.html" class="blog-link">اقرأ المزيد ←</a>
+                </article>
+
+                <article class="blog-card">
+                    <span class="blog-icon">🔐</span>
+                    <h3>فهم حقوق خصوصية البيانات العالمية</h3>
+                    <p>تعرف على القوانين والتشريعات العالمية الحاكمة لخصوصيتك الرقمية وحمايتها.</p>
+                    <a href="blog/data-privacy-rights.html" class="blog-link">اقرأ المزيد ←</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>🚀 مستعد لاستعادة التحكم بخصوصيتك الرقمية؟</h2>
+            <p>أنشئ طلب حذف البيانات الأول الخاص بك الآن - يستغرق الأمر أقل من دقيقتين!</p>
+            <a href="#deletionForm" class="btn-large">ابدأ الآن مجاناً ←</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>DataShredder</h4>
+                    <p>تمكين الأفراد لممارسة حقوق الخصوصية وحماية بياناتهم الرقمية.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#generator">توليد طلب</a></li>
+                        <li><a href="blog/">مدونة الخصوصية</a></li>
+                        <li><a href="#faq">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>قانوني</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">شروط الخدمة</a></li>
+                        <li><a href="disclaimer.html">إخلاء المسؤولية</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>مصادر ومراجع</h4>
+                    <ul>
+                        <li><a href="https://gdpr.eu" target="_blank">الموقع الرسمي لـ GDPR</a></li>
+                        <li><a href="https://oag.ca.gov/privacy/ccpa" target="_blank">معلومات CCPA</a></li>
+                        <li><a href="mailto:support@datashredder.com">اتصل بنا</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 DataShredder. جميع الحقوق محفوظة. | صنع بحب لتعزيز الخصوصية ❤️</p>
+                <p class="disclaimer">⚠️ تقدم هذه الأداة نماذج وصيغ لأغراض تعليمية وإرشادية فقط. استشر محامياً للحصول على مشورة قانونية متخصصة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
