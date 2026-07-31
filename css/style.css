@@ -222,25 +222,6 @@ body {
     margin-left: 10px;
 }
 
-/* ========================================
-   Buttons
-======================================== */
-.btn-primary,
-.btn-secondary,
-.btn-premium,
-.btn-large {
-    padding: 15px 30px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.1em;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-}
-
 .btn-primary {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
@@ -262,17 +243,6 @@ body {
 .btn-secondary:hover {
     background: var(--primary-color);
     color: white;
-}
-
-.btn-premium {
-    background: linear-gradient(135deg, #f59e0b, #d97706);
-    color: white;
-    width: 100%;
-    font-size: 1.2em;
-}
-
-.btn-premium:hover {
-    transform: scale(1.05);
 }
 
 .btn-large {
@@ -350,28 +320,6 @@ body {
 
 .next-steps li {
     margin-bottom: 10px;
-    font-size: 1.05em;
-}
-
-.premium-cta {
-    background: linear-gradient(135deg, #fef3c7, #fde68a);
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-}
-
-.premium-cta h3 {
-    color: #92400e;
-    margin-bottom: 10px;
-}
-
-.premium-cta ul {
-    list-style: none;
-    margin: 20px 0;
-}
-
-.premium-cta li {
-    margin: 10px 0;
     font-size: 1.05em;
 }
 

@@ -1,11 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://datashredder.com/sitemap.xml
-
-# Crawl Delay
-Crawl-delay: 1
-
-# Disallow admin areas (if any in future)
-Disallow: /admin/
-Disallow: /private/
+Sitemap: https://bankacem.github.io/datashredder/sitemap.xml
