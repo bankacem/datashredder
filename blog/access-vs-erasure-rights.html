@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right of Access vs. Right to Erasure: What's the Difference? | DataShredder</title>
+    <meta name="description" content="People often confuse asking to see their data with asking to delete it. Here's exactly how the two rights differ, and when to use each one.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bankacem.github.io/datashredder/blog/access-vs-erasure-rights.html">
+    <meta property="og:title" content="Right of Access vs. Right to Erasure: What's the Difference?">
+    <meta property="og:description" content="People often confuse asking to see their data with asking to delete it. Here's exactly how the two rights differ, and when to use each one.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bankacem.github.io/datashredder/blog/access-vs-erasure-rights.html">
+    <meta property="og:image" content="https://bankacem.github.io/datashredder/assets/blog/access-vs-erasure.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Right of Access vs. Right to Erasure: What's the Difference?",
+  "description": "People often confuse asking to see their data with asking to delete it. Here's exactly how the two rights differ, and when to use each one.",
+  "image": "https://bankacem.github.io/datashredder/assets/blog/access-vs-erasure.jpg",
+  "datePublished": "2026-08-01",
+  "dateModified": "2026-08-01",
+  "author": {
+    "@type": "Organization",
+    "name": "DataShredder"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DataShredder",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bankacem.github.io/datashredder/assets/logo.svg"
+    }
+  },
+  "mainEntityOfPage": "https://bankacem.github.io/datashredder/blog/access-vs-erasure-rights.html"
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do these two rights have the same response deadline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Under GDPR, both are subject to the same one-month deadline (extendable to three for complex cases). CCPA's timelines are similarly aligned between the two rights."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I request both at the same time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, though it's generally more effective to request access first, review the response, then send a targeted erasure request rather than combining them into one vague ask."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a fee for either request?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both are typically free for a first request; a reasonable fee can only apply if your requests become repetitive or excessive."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+      .toc { background: var(--light-bg, #f8fafc); border-radius: 12px; padding: 20px 24px; margin: 24px 0; }
+      .toc h2 { font-size: 1em; margin: 0 0 10px; }
+      .toc ol { margin: 0; padding-left: 20px; }
+      .toc li { margin: 4px 0; }
+      .faq-item { margin-bottom: 18px; }
+      .faq-item h3 { margin-bottom: 4px; font-size: 1.05em; }
+      .cmp-table { width: 100%; border-collapse: collapse; font-size: 0.95em; margin: 16px 0; }
+      .cmp-table th, .cmp-table td { border: 1px solid #e5e7eb; padding: 10px 12px; text-align: left; vertical-align: top; }
+      .cmp-table th { background: var(--light-bg, #f8fafc); }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="../index.html" style="text-decoration: none; color: var(--primary-color);">🗑️ DataShredder</a></h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="generator-section">
+        <div class="container" style="max-width: 800px;">
+            <article>
+                <h1>Right of Access vs. Right to Erasure: What's the Difference?</h1>
+                <p style="color:#64748b; font-size:14px;">Updated August 2026 · 6 min read</p>
+
+                <img src="../assets/blog/access-vs-erasure.jpg" alt="Comparing the right of access and the right to erasure" width="800" height="420" loading="lazy" style="width:100%; height:auto; border-radius:12px; margin:16px 0;">
+
+                <nav class="toc" aria-label="Table of contents">
+                    <h2>In this article</h2>
+                    <ol>
+<li><a href="#the-confusion">Why these get mixed up</a></li>
+<li><a href="#right-of-access">The right of access, explained</a></li>
+<li><a href="#right-to-erasure">The right to erasure, explained</a></li>
+<li><a href="#which-to-use">Which one you actually want</a></li>
+                    </ol>
+                </nav>
+
+
+                <h2 id="the-confusion">Why these get mixed up</h2>
+                <p>"I want to know what they have on me" and "I want them to get rid of it" sound like the same request, but they're two separate legal rights with different processes, different deadlines in some jurisdictions, and different outcomes. Sending the wrong one means you either get a huge data export when you wanted deletion, or a confirmation of deletion when you actually wanted to review what they had first.</p>
+
+                <h2 id="right-of-access">The right of access, explained</h2>
+                <p>Under GDPR Article 15 (and CCPA's similar right to know), you can ask a company to confirm whether they're processing your data and, if so, give you a copy of it along with details like where it came from and who they've shared it with. This is the right to use if you want to see your file before deciding what to do next — it doesn't remove anything, it just makes it visible.</p>
+
+                <h2 id="right-to-erasure">The right to erasure, explained</h2>
+                <p>This is the right most people mean when they say "delete my data" — it asks the company to permanently remove your personal information, subject to the legal exceptions covered elsewhere on this site (tax records, ongoing legal claims, and similar obligations). It's a stronger, more final request, and companies scrutinize it more closely than an access request.</p>
+
+                <h2 id="which-to-use">Which one you actually want</h2>
+                <table class="cmp-table">
+                    <tr><th>Situation</th><th>Right to use</th></tr>
+                    <tr><td>You want to know what a company has before deciding anything</td><td>Right of access</td></tr>
+                    <tr><td>You already know you want it gone</td><td>Right to erasure</td></tr>
+                    <tr><td>You suspect a data breach involved your info</td><td>Access first, then erasure if warranted</td></tr>
+                </table>
+                <p>A common, effective approach: request access first if you're unsure what a company holds, review what comes back, then follow up with a scoped erasure request for the parts you actually want gone. Our <a href="../index.html">generator</a> currently focuses on erasure requests, since that's what most people are looking for once they've decided to act.</p>
+
+
+                <h2>Frequently Asked Questions</h2>
+<div class="faq-item"><h3>Do these two rights have the same response deadline?</h3><p>Under GDPR, both are subject to the same one-month deadline (extendable to three for complex cases). CCPA's timelines are similarly aligned between the two rights.</p></div>
+<div class="faq-item"><h3>Can I request both at the same time?</h3><p>Yes, though it's generally more effective to request access first, review the response, then send a targeted erasure request rather than combining them into one vague ask.</p></div>
+<div class="faq-item"><h3>Is there a fee for either request?</h3><p>Both are typically free for a first request; a reasonable fee can only apply if your requests become repetitive or excessive.</p></div>
+
+
+                <h2>Related reading</h2>
+                <ul>
+<li><a href="company-refuses-deletion-request.html">What to do when a company refuses your deletion request</a></li>
+<li><a href="what-is-gdpr.html">What is GDPR and how does it protect you?</a></li>
+                    <li><a href="../index.html">Generate a free data deletion request</a></li>
+                </ul>
+            </article>
+
+            <div style="margin-top: 40px; text-align: center;">
+                <a href="../index.html" class="btn-primary" style="display: inline-block; width: auto;">← Generate a Deletion Request Now</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 DataShredder. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
