@@ -21,7 +21,7 @@
   "description": "HIPAA and GDPR handle health data deletion very differently. Here's what you can actually get erased from a medical provider, and what stays on record.",
   "image": "https://bankacem.github.io/datashredder/assets/blog/healthcare-data.jpg",
   "datePublished": "2026-08-01",
-  "dateModified": "2026-08-01",
+  "dateModified": "2026-08-02",
   "author": {
     "@type": "Organization",
     "name": "DataShredder"
@@ -65,6 +65,14 @@
         "@type": "Answer",
         "text": "These are treated the same as other health records under both frameworks — accessible and correctable under HIPAA, erasable with exceptions under GDPR."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get my health insurer's marketing data deleted separately from my medical chart?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, marketing and behavioral data held by an insurer is generally treated separately from your clinical claims history and can often be deleted on request."
+      }
     }
   ]
 }
@@ -90,25 +98,24 @@
             </div>
         </div>
     </header>
-
     <main class="generator-section">
         <div class="container" style="max-width: 800px;">
             <article>
                 <h1>Healthcare Data Privacy: HIPAA vs GDPR Deletion Rights Compared</h1>
-                <p style="color:#64748b; font-size:14px;">Updated August 2026 · 8 min read</p>
-
+                <p style="color:#64748b; font-size:14px;">Updated August 2026 · 10 min read</p>
                 <img src="../assets/blog/healthcare-data.jpg" alt="Comparing HIPAA and GDPR health data deletion rights" width="800" height="420" loading="lazy" style="width:100%; height:auto; border-radius:12px; margin:16px 0;">
-
                 <nav class="toc" aria-label="Table of contents">
                     <h2>In this article</h2>
                     <ol>
 <li><a href="#key-difference">The key difference between the two</a></li>
 <li><a href="#hipaa-reality">What HIPAA actually gives you</a></li>
+<li><a href="#hipaa-amendment">The amendment process, in practice</a></li>
 <li><a href="#gdpr-health">What GDPR gives you for health data</a></li>
+<li><a href="#comparison-table">Side-by-side comparison</a></li>
+<li><a href="#insurance-data">Health insurance data is its own category</a></li>
 <li><a href="#how-to-request">How to request deletion from a provider</a></li>
                     </ol>
                 </nav>
-
 
                 <h2 id="key-difference">The key difference between the two</h2>
                 <p>This surprises a lot of people: HIPAA, the US law most associated with medical privacy, does not give you a right to delete your medical records. It gives you a right to <em>access</em> them and to request corrections — deletion isn't part of the framework at all. GDPR, on the other hand, does include a right to erasure for health data, but treats it as a "special category" with tighter exceptions than ordinary personal data.</p>
@@ -116,23 +123,32 @@
                 <h2 id="hipaa-reality">What HIPAA actually gives you</h2>
                 <p>Under HIPAA, providers in the US are generally required to retain medical records for a minimum period set by state law — often six to ten years, sometimes longer for minors' records. You can request an amendment if information is inaccurate, and you can request that certain disclosures be restricted, but you cannot compel a US healthcare provider to delete your chart. This is intentional: continuity of care and legal liability both depend on the record staying intact.</p>
 
+                <h2 id="hipaa-amendment">The amendment process, in practice</h2>
+                <p>If you spot something wrong in your chart — a misdiagnosis that was later corrected, an outdated allergy note, incorrect demographic information — you can submit a written amendment request to the provider. They have 60 days to respond, with a possible 30-day extension. If they agree, they add the correction; if they disagree, they're required to note your disagreement in the file permanently rather than simply deleting the disputed entry. This is a meaningfully different process from GDPR's rectification right, which more directly obligates a correction rather than just an annotated disagreement.</p>
+
                 <h2 id="gdpr-health">What GDPR gives you for health data</h2>
                 <p>In the EU, health data falls under Article 9 as a special category, which means processing it requires a stronger legal basis to begin with — and the erasure right under Article 17 does apply, but providers can still refuse deletion when a legal obligation (like a national medical record retention law) or a public health justification applies. In practice, this means you can request deletion of test results from years ago that are no longer clinically relevant, but a provider can validly refuse to delete records tied to an ongoing treatment history or a legally mandated retention period.</p>
 
-                <h2 id="how-to-request">How to request deletion from a provider</h2>
+                <h2 id="comparison-table">Side-by-side comparison</h2>
                 <table class="cmp-table">
-                    <tr><th>Region</th><th>Right available</th><th>Best framing for your request</th></tr>
-                    <tr><td>United States (HIPAA)</td><td>Access + correction, not deletion</td><td>Request an amendment or restriction, not erasure</td></tr>
-                    <tr><td>European Union (GDPR)</td><td>Erasure, with health-data exceptions</td><td>Cite Article 17 and specify which records are no longer clinically relevant</td></tr>
+                    <tr><th></th><th>HIPAA (US)</th><th>GDPR (EU)</th></tr>
+                    <tr><td>Right to see your records</td><td>Yes</td><td>Yes</td></tr>
+                    <tr><td>Right to correct errors</td><td>Yes (amendment process)</td><td>Yes (rectification, more direct)</td></tr>
+                    <tr><td>Right to delete records</td><td>No</td><td>Yes, with exceptions</td></tr>
+                    <tr><td>Minimum retention typically required</td><td>6–10 years (varies by state)</td><td>Varies by member state and record type</td></tr>
                 </table>
-                <p>If you're in the EU, our <a href="../index.html">free request generator</a> can build a properly scoped GDPR erasure request for a specific category of health records rather than your whole file, which providers are far more likely to actually act on.</p>
 
+                <h2 id="insurance-data">Health insurance data is its own category</h2>
+                <p>Data held by your health insurer, separate from your provider's clinical chart, follows slightly different rules — HIPAA still applies to insurers as a "covered entity," but insurers also often hold behavioral and claims data that overlaps with financial retention requirements. If you want a health insurer's marketing or behavioral data (as opposed to clinical claims history) deleted, that request is closer to the banking data situation than the provider situation, and you can request it separately from your medical chart itself.</p>
+
+                <h2 id="how-to-request">How to request deletion from a provider</h2>
+                <p>If you're in the EU, our <a href="../index.html">free request generator</a> can build a properly scoped GDPR erasure request for a specific category of health records rather than your whole file, which providers are far more likely to actually act on. In the US, use the amendment process instead of asking for deletion, since that's the right HIPAA actually provides.</p>
 
                 <h2>Frequently Asked Questions</h2>
 <div class="faq-item"><h3>Can I delete my medical records in the US?</h3><p>Not through a deletion request — HIPAA gives you access and correction rights, not erasure. Providers are legally required to retain records for a set period regardless of your preference.</p></div>
 <div class="faq-item"><h3>Does GDPR let me delete all my health data?</h3><p>Not automatically. You can request erasure, but providers can refuse when a legal retention obligation or ongoing treatment relationship applies.</p></div>
 <div class="faq-item"><h3>What about mental health or therapy records specifically?</h3><p>These are treated the same as other health records under both frameworks — accessible and correctable under HIPAA, erasable with exceptions under GDPR.</p></div>
-
+<div class="faq-item"><h3>Can I get my health insurer's marketing data deleted separately from my medical chart?</h3><p>Yes, marketing and behavioral data held by an insurer is generally treated separately from your clinical claims history and can often be deleted on request.</p></div>
 
                 <h2>Related reading</h2>
                 <ul>
@@ -141,13 +157,11 @@
                     <li><a href="../index.html">Generate a free data deletion request</a></li>
                 </ul>
             </article>
-
             <div style="margin-top: 40px; text-align: center;">
                 <a href="../index.html" class="btn-primary" style="display: inline-block; width: auto;">← Generate a Deletion Request Now</a>
             </div>
         </div>
     </main>
-
     <footer class="footer">
         <div class="container" style="text-align: center;">
             <p>&copy; 2026 DataShredder. All rights reserved.</p>

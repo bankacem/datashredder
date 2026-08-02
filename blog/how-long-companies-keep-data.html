@@ -21,7 +21,7 @@
   "description": "There's no single answer, but here's how data retention limits actually work across GDPR, CCPA, and common industries, with real timeframes.",
   "image": "https://bankacem.github.io/datashredder/assets/blog/data-retention.jpg",
   "datePublished": "2026-08-01",
-  "dateModified": "2026-08-01",
+  "dateModified": "2026-08-02",
   "author": {
     "@type": "Organization",
     "name": "DataShredder"
@@ -65,6 +65,14 @@
         "@type": "Answer",
         "text": "Yes, though in practice cookie retention is often shorter (commonly 12-26 months) and should be disclosed in the company's cookie policy."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does data sometimes linger in backups after deletion?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Backup systems are usually on a separate rotation schedule from live systems, so a short delay (often 30-90 days) before backups are fully purged is generally considered acceptable if disclosed."
+      }
     }
   ]
 }
@@ -90,25 +98,23 @@
             </div>
         </div>
     </header>
-
     <main class="generator-section">
         <div class="container" style="max-width: 800px;">
             <article>
                 <h1>How Long Can Companies Legally Keep Your Data After You Leave?</h1>
-                <p style="color:#64748b; font-size:14px;">Updated August 2026 · 6 min read</p>
-
+                <p style="color:#64748b; font-size:14px;">Updated August 2026 · 9 min read</p>
                 <img src="../assets/blog/data-retention.jpg" alt="How long companies can legally retain personal data" width="800" height="420" loading="lazy" style="width:100%; height:auto; border-radius:12px; margin:16px 0;">
-
                 <nav class="toc" aria-label="Table of contents">
                     <h2>In this article</h2>
                     <ol>
 <li><a href="#no-fixed-number">Why there's no single legal number</a></li>
 <li><a href="#common-timeframes">Common retention timeframes by data type</a></li>
 <li><a href="#storage-limitation">The rule that actually governs this: storage limitation</a></li>
+<li><a href="#backups">What about backups and archived copies?</a></li>
+<li><a href="#industry-specific">Industry-specific retention rules</a></li>
 <li><a href="#how-to-check">How to find out a specific company's policy</a></li>
                     </ol>
                 </nav>
-
 
                 <h2 id="no-fixed-number">Why there's no single legal number</h2>
                 <p>People often ask "how long can a company legally keep my data" expecting a single number, but neither GDPR nor CCPA sets one universal limit. Instead, both laws require that data only be kept as long as it's actually needed for the purpose it was collected for — a principle GDPR calls "storage limitation." The actual number of months or years depends entirely on what the data is and why it was collected.</p>
@@ -126,16 +132,21 @@
                 <h2 id="storage-limitation">The rule that actually governs this: storage limitation</h2>
                 <p>Storage limitation means a company can't just hold your data indefinitely "in case it's useful later." If you ask why they still have data from an account you closed two years ago, they're required to have a specific, current justification — not just "we keep everything." This is one of the more useful angles for a deletion request: instead of just asking them to delete your data, ask them to justify why they're still retaining it under their own stated retention policy.</p>
 
+                <h2 id="backups">What about backups and archived copies?</h2>
+                <p>This is where most companies have legitimate wiggle room. Even after a deletion request is processed in the live system, backups are often on a separate schedule and can take longer to purge — commonly 30 to 90 days, sometimes longer for infrequently-rotated backup systems. This isn't a loophole exactly; regulators generally accept that immediate deletion from every backup snapshot isn't technically realistic, as long as the company discloses the backup retention timeline and the data isn't actively used from those backups in the meantime.</p>
+
+                <h2 id="industry-specific">Industry-specific retention rules</h2>
+                <p>Beyond the general storage limitation principle, several industries have their own specific minimums layered on top: financial services (five to ten years, covered in our <a href="banking-financial-data-deletion.html">banking data guide</a>), healthcare (six to ten years or longer, covered in our <a href="healthcare-data-hipaa-vs-gdpr.html">HIPAA vs GDPR guide</a>), and telecommunications (often six months to two years for call and connection records, depending on the country's specific data retention laws). When a company cites "industry regulation" as a reason for retention, it's worth asking exactly which regulation and what the specific retention period is — a vague answer is a sign the excuse hasn't actually been checked internally.</p>
+
                 <h2 id="how-to-check">How to find out a specific company's policy</h2>
                 <p>Most companies publish their retention periods in their privacy policy, usually under a section literally called "How long we keep your data" or similar. If it's vague or missing, that's itself worth raising in a formal request — a company that can't state its retention period likely isn't enforcing one consistently.</p>
                 <p>If you believe a company is holding onto data longer than necessary, our <a href="../index.html">free request generator</a> can help you draft a request that specifically cites the storage limitation principle rather than a general deletion ask.</p>
-
 
                 <h2>Frequently Asked Questions</h2>
 <div class="faq-item"><h3>Is there a maximum retention period under GDPR?</h3><p>GDPR doesn't set one fixed number — it requires retention to be limited to what's necessary for the stated purpose, which varies by data type and industry.</p></div>
 <div class="faq-item"><h3>Can I ask a company how long they keep my data?</h3><p>Yes, this falls under your right of access — you can request their retention period for your specific data as part of an access request.</p></div>
 <div class="faq-item"><h3>Do cookies and analytics data follow the same rules?</h3><p>Yes, though in practice cookie retention is often shorter (commonly 12-26 months) and should be disclosed in the company's cookie policy.</p></div>
-
+<div class="faq-item"><h3>Why does data sometimes linger in backups after deletion?</h3><p>Backup systems are usually on a separate rotation schedule from live systems, so a short delay (often 30-90 days) before backups are fully purged is generally considered acceptable if disclosed.</p></div>
 
                 <h2>Related reading</h2>
                 <ul>
@@ -144,13 +155,11 @@
                     <li><a href="../index.html">Generate a free data deletion request</a></li>
                 </ul>
             </article>
-
             <div style="margin-top: 40px; text-align: center;">
                 <a href="../index.html" class="btn-primary" style="display: inline-block; width: auto;">← Generate a Deletion Request Now</a>
             </div>
         </div>
     </main>
-
     <footer class="footer">
         <div class="container" style="text-align: center;">
             <p>&copy; 2026 DataShredder. All rights reserved.</p>

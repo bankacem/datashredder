@@ -21,7 +21,7 @@
   "description": "Unsubscribing stops emails, but it doesn't stop the data collection behind them. Here's how to actually cut off marketing data at the source.",
   "image": "https://bankacem.github.io/datashredder/assets/blog/email-marketing.jpg",
   "datePublished": "2026-08-01",
-  "dateModified": "2026-08-01",
+  "dateModified": "2026-08-02",
   "author": {
     "@type": "Organization",
     "name": "DataShredder"
@@ -65,6 +65,14 @@
         "@type": "Answer",
         "text": "It's specific to California's CCPA/CPRA; other regions rely on GDPR's consent-based model or their own local equivalents."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Does resetting my advertising ID remove old data too?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — it breaks the link going forward for new tracking, but historical data already tied to the old identifier may still exist unless separately deleted."
+      }
     }
   ]
 }
@@ -90,15 +98,12 @@
             </div>
         </div>
     </header>
-
     <main class="generator-section">
         <div class="container" style="max-width: 800px;">
             <article>
                 <h1>How to Stop Email & Marketing Data Collection at the Source</h1>
-                <p style="color:#64748b; font-size:14px;">Updated August 2026 · 6 min read</p>
-
+                <p style="color:#64748b; font-size:14px;">Updated August 2026 · 9 min read</p>
                 <img src="../assets/blog/email-marketing.jpg" alt="Stopping email and marketing data collection at the source" width="800" height="420" loading="lazy" style="width:100%; height:auto; border-radius:12px; margin:16px 0;">
-
                 <nav class="toc" aria-label="Table of contents">
                     <h2>In this article</h2>
                     <ol>
@@ -106,9 +111,10 @@
 <li><a href="#three-layers">The three layers of marketing data</a></li>
 <li><a href="#step-by-step">Cutting it off, layer by layer</a></li>
 <li><a href="#data-sharing">Stopping data shared with marketing partners</a></li>
+<li><a href="#ad-ids">Advertising IDs: the layer most people miss</a></li>
+<li><a href="#physical-mail">What about physical junk mail?</a></li>
                     </ol>
                 </nav>
-
 
                 <h2 id="unsubscribe-myth">Why unsubscribing isn't enough</h2>
                 <p>Clicking "unsubscribe" stops the emails landing in your inbox, but it doesn't touch the profile that was built to target you in the first place — your browsing behavior, purchase history, and inferred interests usually stay right where they are, feeding other channels like retargeted ads or a shared marketing database. If your goal is actually reducing what's collected about you, unsubscribing is step one of three, not the whole job.</p>
@@ -131,12 +137,17 @@
                 <h2 id="data-sharing">Stopping data shared with marketing partners</h2>
                 <p>The hardest layer to control is data already shared with third-party ad networks and marketing partners before you opted out — unsubscribing today doesn't retroactively pull your profile back from companies it was already shared with. For that, a formal erasure request naming the company's marketing partners (if you know them) or asking generally "please confirm and stop any sharing of my data with third-party marketing partners" is the most effective approach. Our <a href="../index.html">free request generator</a> can build exactly this kind of request.</p>
 
+                <h2 id="ad-ids">Advertising IDs: the layer most people miss</h2>
+                <p>Your phone and browser carry an advertising identifier (IDFA on iOS, GAID on Android, or various cookie-based IDs on desktop) that lets advertisers link activity across apps and sites without needing your name or email at all. Resetting or opting out of this identifier — in iOS Settings under Privacy & Tracking, or Android Settings under Ads — breaks the link between your past behavior and your device going forward, even if individual companies still hold historical data tied to the old ID. This is a device-level setting, not something any single company's opt-out link controls, which is why it's easy to overlook.</p>
+
+                <h2 id="physical-mail">What about physical junk mail?</h2>
+                <p>Physical mail marketing runs on a mostly separate data pipeline from digital marketing, usually sourced from address databases rather than your email or browsing activity. National mail preference services (like the DMAchoice registry in the US, run by the Data & Marketing Association) let you opt out of most commercial mail lists at once, rather than contacting each mailer individually. It's a different fix from anything covered above, but worth doing alongside your digital opt-outs if physical mail is part of what's bothering you.</p>
 
                 <h2>Frequently Asked Questions</h2>
 <div class="faq-item"><h3>Does unsubscribing delete my data?</h3><p>No — it stops future emails but typically leaves your behavioral profile and any data already shared with partners untouched.</p></div>
 <div class="faq-item"><h3>What's the difference between opting out and requesting erasure?</h3><p>Opting out (like Do Not Sell/Share) stops future use, while erasure asks the company to actually delete what they've already collected.</p></div>
 <div class="faq-item"><h3>Is 'Do Not Sell My Personal Information' the same everywhere?</h3><p>It's specific to California's CCPA/CPRA; other regions rely on GDPR's consent-based model or their own local equivalents.</p></div>
-
+<div class="faq-item"><h3>Does resetting my advertising ID remove old data too?</h3><p>No — it breaks the link going forward for new tracking, but historical data already tied to the old identifier may still exist unless separately deleted.</p></div>
 
                 <h2>Related reading</h2>
                 <ul>
@@ -145,13 +156,11 @@
                     <li><a href="../index.html">Generate a free data deletion request</a></li>
                 </ul>
             </article>
-
             <div style="margin-top: 40px; text-align: center;">
                 <a href="../index.html" class="btn-primary" style="display: inline-block; width: auto;">← Generate a Deletion Request Now</a>
             </div>
         </div>
     </main>
-
     <footer class="footer">
         <div class="container" style="text-align: center;">
             <p>&copy; 2026 DataShredder. All rights reserved.</p>

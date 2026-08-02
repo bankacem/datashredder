@@ -21,7 +21,7 @@
   "description": "How to request deletion of a child's personal data under COPPA and GDPR-K, and what makes these requests different from adult deletion requests.",
   "image": "https://bankacem.github.io/datashredder/assets/blog/childrens-privacy.jpg",
   "datePublished": "2026-08-01",
-  "dateModified": "2026-08-01",
+  "dateModified": "2026-08-02",
   "author": {
     "@type": "Organization",
     "name": "DataShredder"
@@ -65,6 +65,14 @@
         "@type": "Answer",
         "text": "They can request deletion themselves as any adult would, citing the same rights covered in our other privacy law guides."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Who do I contact for data collected through a school app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often the school district's data privacy officer rather than the app vendor directly, since many educational platforms operate under the school's consent rather than an individual parent signup."
+      }
     }
   ]
 }
@@ -90,25 +98,24 @@
             </div>
         </div>
     </header>
-
     <main class="generator-section">
         <div class="container" style="max-width: 800px;">
             <article>
                 <h1>Children's Data Privacy: COPPA, GDPR-K, and Deleting a Minor's Data</h1>
-                <p style="color:#64748b; font-size:14px;">Updated August 2026 · 6 min read</p>
-
+                <p style="color:#64748b; font-size:14px;">Updated August 2026 · 9 min read</p>
                 <img src="../assets/blog/childrens-privacy.jpg" alt="Children's data privacy rights under COPPA and GDPR-K" width="800" height="420" loading="lazy" style="width:100%; height:auto; border-radius:12px; margin:16px 0;">
-
                 <nav class="toc" aria-label="Table of contents">
                     <h2>In this article</h2>
                     <ol>
 <li><a href="#why-different">Why children's data gets special treatment</a></li>
 <li><a href="#coppa-basics">COPPA, in the United States</a></li>
+<li><a href="#coppa-in-practice">What COPPA looks like in practice</a></li>
 <li><a href="#gdpr-k-basics">GDPR-K, in the European Union</a></li>
+<li><a href="#age-thresholds">Age thresholds vary by EU country</a></li>
+<li><a href="#schools-apps">A special case: school and educational apps</a></li>
 <li><a href="#making-request">Making a request as a parent or guardian</a></li>
                     </ol>
                 </nav>
-
 
                 <h2 id="why-different">Why children's data gets special treatment</h2>
                 <p>Both US and EU privacy law treat children's personal data as higher-risk than adults', on the reasoning that minors can't meaningfully consent to data collection the way an adult can. This translates into stricter collection rules upfront, and in most cases, an easier path to deletion — a parent doesn't need to prove the same kind of harm or justification an adult typically would.</p>
@@ -116,8 +123,24 @@
                 <h2 id="coppa-basics">COPPA, in the United States</h2>
                 <p>The Children's Online Privacy Protection Act applies to services that knowingly collect data from children under 13. Under COPPA, a parent can review what's been collected and request its deletion directly, and the operator is required to comply without the extended legal exceptions that apply to adult data. If a service collected data from a child under 13 without verifiable parental consent in the first place, that's a separate violation worth reporting to the <a href="https://www.ftc.gov/enforcement/report-fraud-scams" target="_blank" rel="noopener">FTC</a> alongside your deletion request.</p>
 
+                <h2 id="coppa-in-practice">What COPPA looks like in practice</h2>
+                <p>Apps and websites that are "directed to children" (games, educational tools, video platforms with clear kid-focused branding) are required to get verifiable parental consent before collecting anything — typically through a credit card verification, signed consent form, or video call confirmation. If you find that a service collected your child's data without ever going through this step, that itself is grounds for both a deletion request and a formal FTC complaint. General-audience apps that unknowingly collected data from a child under 13 are still required to delete it once you notify them, even if the app wasn't originally designed for kids.</p>
+
                 <h2 id="gdpr-k-basics">GDPR-K, in the European Union</h2>
-                <p>GDPR doesn't have a separate statute for children, but Article 8 sets the age of consent for data processing at 16 by default (member states can lower it to as young as 13). Data collected from a child without valid parental consent under this threshold is, by definition, unlawfully processed — which strengthens an erasure request significantly, since "unlawful processing" is one of the clearest grounds for erasure under Article 17.</p>
+                <p>GDPR doesn't have a separate statute for children, but Article 8 sets the age of consent for data processing at 16 by default. Data collected from a child without valid parental consent under this threshold is, by definition, unlawfully processed — which strengthens an erasure request significantly, since "unlawful processing" is one of the clearest grounds for erasure under Article 17.</p>
+
+                <h2 id="age-thresholds">Age thresholds vary by EU country</h2>
+                <table class="cmp-table">
+                    <tr><th>Country</th><th>Age of digital consent</th></tr>
+                    <tr><td>Germany, France, Netherlands</td><td>16 (EU default)</td></tr>
+                    <tr><td>UK (post-Brexit, UK GDPR)</td><td>13</td></tr>
+                    <tr><td>Spain, Portugal</td><td>13–14 (varies)</td></tr>
+                    <tr><td>Ireland</td><td>16</td></tr>
+                </table>
+                <p>Because member states can set the threshold anywhere between 13 and 16, the exact age that matters depends on which country's law applies to the specific service — usually where the child was located when the data was collected.</p>
+
+                <h2 id="schools-apps">A special case: school and educational apps</h2>
+                <p>Apps used through a school often collect data under the school's consent rather than a parent's individual signup — the school acts as the parent's agent for COPPA purposes in the US, for instance. This means a deletion request for education-related data sometimes needs to go through the school district rather than directly to the app, especially for platform-wide student data systems. If you're unsure who to contact, starting with the school's designated data privacy officer is usually faster than contacting the app vendor directly.</p>
 
                 <h2 id="making-request">Making a request as a parent or guardian</h2>
                 <ul>
@@ -127,12 +150,11 @@
                 </ul>
                 <p>Our <a href="../index.html">free request generator</a> can build this kind of request, worded appropriately for a parent acting on a child's behalf.</p>
 
-
                 <h2>Frequently Asked Questions</h2>
 <div class="faq-item"><h3>What age counts as a 'child' under these laws?</h3><p>Under COPPA it's under 13. Under GDPR the default is under 16, though individual EU countries can set it as low as 13.</p></div>
 <div class="faq-item"><h3>Can a parent request deletion without the child's involvement?</h3><p>Yes — both frameworks are built around parental or guardian consent and control, so a parent can request deletion directly.</p></div>
 <div class="faq-item"><h3>What if the child is now an adult?</h3><p>They can request deletion themselves as any adult would, citing the same rights covered in our other privacy law guides.</p></div>
-
+<div class="faq-item"><h3>Who do I contact for data collected through a school app?</h3><p>Often the school district's data privacy officer rather than the app vendor directly, since many educational platforms operate under the school's consent rather than an individual parent signup.</p></div>
 
                 <h2>Related reading</h2>
                 <ul>
@@ -141,13 +163,11 @@
                     <li><a href="../index.html">Generate a free data deletion request</a></li>
                 </ul>
             </article>
-
             <div style="margin-top: 40px; text-align: center;">
                 <a href="../index.html" class="btn-primary" style="display: inline-block; width: auto;">← Generate a Deletion Request Now</a>
             </div>
         </div>
     </main>
-
     <footer class="footer">
         <div class="container" style="text-align: center;">
             <p>&copy; 2026 DataShredder. All rights reserved.</p>
