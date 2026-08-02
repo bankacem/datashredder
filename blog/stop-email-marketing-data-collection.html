@@ -73,6 +73,22 @@
         "@type": "Answer",
         "text": "No — it breaks the link going forward for new tracking, but historical data already tied to the old identifier may still exist unless separately deleted."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Does blocking images in my email client actually stop tracking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, in large part — most email open-tracking relies on a remote image loading, so disabling automatic image loading prevents that specific signal from being sent, independent of any unsubscribe process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a company required to offer one-click unsubscribe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Major inbox providers now require it for bulk senders to avoid spam filtering, so its absence is a strong signal a company's list management (and likely broader compliance) is outdated."
+      }
     }
   ]
 }
@@ -143,12 +159,21 @@
                 <h2 id="physical-mail">What about physical junk mail?</h2>
                 <p>Physical mail marketing runs on a mostly separate data pipeline from digital marketing, usually sourced from address databases rather than your email or browsing activity. National mail preference services (like the DMAchoice registry in the US, run by the Data & Marketing Association) let you opt out of most commercial mail lists at once, rather than contacting each mailer individually. It's a different fix from anything covered above, but worth doing alongside your digital opt-outs if physical mail is part of what's bothering you.</p>
 
+
+                <h2 id="tracking-pixels">Tracking pixels: the part unsubscribing never touches</h2>
+                <p>Most marketing emails include a tiny, invisible tracking pixel that reports back the moment you open the email — before you've even decided whether to unsubscribe. Blocking image loading by default in your email client (most modern clients let you disable "load remote images automatically") stops this at the source, independent of any opt-out process, since the pixel simply never fires if the image never loads. This is a rare case where a browser or client setting is more effective than any request you could send the company.</p>
+
+                <h2 id="header-based-unsubscribe">Why the one-click unsubscribe header matters</h2>
+                <p>Since 2024, major inbox providers require bulk senders to support a one-click "List-Unsubscribe" header rather than routing you through a marketing landing page designed to talk you out of leaving. If a company's unsubscribe link still redirects to a page asking you to "update preferences instead" or requires multiple clicks, that's a sign their compliance is minimal — and a good indicator that the underlying data-sharing behind the scenes probably needs a formal request rather than trusting their self-serve options.</p>
+
                 <h2>Frequently Asked Questions</h2>
 <div class="faq-item"><h3>Does unsubscribing delete my data?</h3><p>No — it stops future emails but typically leaves your behavioral profile and any data already shared with partners untouched.</p></div>
 <div class="faq-item"><h3>What's the difference between opting out and requesting erasure?</h3><p>Opting out (like Do Not Sell/Share) stops future use, while erasure asks the company to actually delete what they've already collected.</p></div>
 <div class="faq-item"><h3>Is 'Do Not Sell My Personal Information' the same everywhere?</h3><p>It's specific to California's CCPA/CPRA; other regions rely on GDPR's consent-based model or their own local equivalents.</p></div>
 <div class="faq-item"><h3>Does resetting my advertising ID remove old data too?</h3><p>No — it breaks the link going forward for new tracking, but historical data already tied to the old identifier may still exist unless separately deleted.</p></div>
 
+<div class="faq-item"><h3>Does blocking images in my email client actually stop tracking?</h3><p>Yes, in large part — most email open-tracking relies on a remote image loading, so disabling automatic image loading prevents that specific signal from being sent, independent of any unsubscribe process.</p></div>
+<div class="faq-item"><h3>Is a company required to offer one-click unsubscribe?</h3><p>Major inbox providers now require it for bulk senders to avoid spam filtering, so its absence is a strong signal a company's list management (and likely broader compliance) is outdated.</p></div>
                 <h2>Related reading</h2>
                 <ul>
 <li><a href="data-broker-opt-out-guide.html">How to opt out of data brokers and people-search sites</a></li>
